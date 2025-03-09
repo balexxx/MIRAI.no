@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | MIRAI STUDIO</title>
+    <meta name="description" content="Book your appointment at MIRAI STUDIO. Select your stylist, service, and preferred time.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Content/Logo_Mirai.jpg" alt="MIRAI STUDIO" class="logo-image">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="active button">Book Now</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Book an Appointment</h1>
+            <p class="fade-in delay-1">Select your stylist, service, and preferred time</p>
+        </div>
+    </section>
+
+    <section class="booking-system">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-steps">
+                    <div class="step active">
+                        <div class="step-number">1</div>
+                        <div class="step-name">Service</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-name">Stylist</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-name">Date & Time</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-name">Details</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-name">Confirm</div>
+                    </div>
+                </div>
+                <div class="booking-content">
+                    <div class="booking-step-content active" id="step-1">
+                        <h2>Select a Service</h2>
+                        <div class="service-categories">
+                            <button class="category-btn active" data-category="all">All</button>
+                            <button class="category-btn" data-category="cut">Cut</button>
+                            <button class="category-btn" data-category="color">Color</button>
+                            <button class="category-btn" data-category="treatment">Treatment</button>
+                        </div>
+                        <div class="service-options">
+                            <div class="service-option" data-category="cut">
+                                <div class="service-option-info">
+                                    <h3>Precision Cut</h3>
+                                    <p>Expert styling tailored to your features and personality.</p>
+                                    <span class="duration">60 min</span>
+                                </div>
+                                <div class="service-option-price">
+                                    <span>650 kr</span>
+                                    <button class="select-service" data-service="cut-1" data-price="650" data-duration="60">Select</button>
+                                </div>
+                            </div>
+                            <div class="service-option" data-category="color">
+                                <div class="service-option-info">
+                                    <h3>Color Transformation</h3>
+                                    <p>Vibrant, lasting color that brings your vision to life.</p>
+                                    <span class="duration">120 min</span>
+                                </div>
+                                <div class="service-option-price">
+                                    <span>1200 kr</span>
+                                    <button class="select-service" data-service="color-1" data-price="1200" data-duration="120">Select</button>
+                                </div>
+                            </div>
+                            <div class="service-option" data-category="treatment">
+                                <div class="service-option-info">
+                                    <h3>Treatment Rituals</h3>
+                                    <p>Restorative therapies for healthy, luminous hair.</p>
+                                    <span class="duration">90 min</span>
+                                </div>
+                                <div class="service-option-price">
+                                    <span>800 kr</span>
+                                    <button class="select-service" data-service="treatment-1" data-price="800" data-duration="90">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-step-content" id="step-2">
+                        <h2>Select a Stylist</h2>
+                        <div class="stylist-options">
+                            <div class="stylist-option">
+                                <div class="stylist-image">
+                                    <img src="assets/images/stylist-1.jpg" alt="Erika Nylund">
+                                </div>
+                                <h3>Erika Nylund</h3>
+                                <p>Founder & Creative Director</p>
+                                <button class="select-stylist" data-stylist="stylist-1">Select</button>
+                            </div>
+                            <div class="stylist-option">
+                                <div class="stylist-image">
+                                    <img src="assets/images/stylist-2.jpg" alt="Akira Tanaka">
+                                </div>
+                                <h3>Akira Tanaka</h3>
+                                <p>Master Stylist</p>
+                                <button class="select-stylist" data-stylist="stylist-2">Select</button>
+                            </div>
+                            <div class="stylist-option">
+                                <div class="stylist-image">
+                                    <img src="assets/images/stylist-3.jpg" alt="Sofia Berg">
+                                </div>
+                                <h3>Sofia Berg</h3>
+                                <p>Color Specialist</p>
+                                <button class="select-stylist" data-stylist="stylist-3">Select</button>
+                            </div>
+                            <div class="stylist-option">
+                                <div class="stylist-image">
+                                    <img src="assets/images/stylist-4.jpg" alt="Marcus Holm">
+                                </div>
+                                <h3>Marcus Holm</h3>
+                                <p>Style Expert</p>
+                                <button class="select-stylist" data-stylist="stylist-4">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-step-content" id="step-3">
+                        <h2>Select Date & Time</h2>
+                        <div class="date-time-container">
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                    <button class="prev-month">&lt;</button>
+                                    <div id="current-month"></div>
+                                    <button class="next-month">&gt;</button>
+                                </div>
+                                <div class="weekdays">
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                    <div>Sun</div>
+                                </div>
+                                <div class="calendar-days" id="calendar-days"></div>
+                            </div>
+                            <div class="time-slots">
+                                <h3>Available Time Slots</h3>
+                                <div class="time-slots-container" id="time-slots-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-step-content" id="step-4">
+                        <h2>Your Details</h2>
+                        <form id="booking-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="notes">Notes</label>
+                                <textarea id="notes" name="notes" rows="4"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="booking-step-content" id="step-5">
+                        <h2>Confirm Booking</h2>
+                        <div class="booking-summary">
+                            <h3>Booking Summary</h3>
+                            <div class="summary-details">
+                                <div class="summary-item">
+                                    <span class="label">Service:</span>
+                                    <span id="summary-service"></span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Stylist:</span>
+                                    <span id="summary-stylist"></span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Date:</span>
+                                    <span id="summary-date"></span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Time:</span>
+                                    <span id="summary-time"></span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Duration:</span>
+                                    <span id="summary-duration"></span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Price:</span>
+                                    <span id="summary-price"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirmation-message">
+                            <p>Please review your booking details before confirming.</p>
+                        </div>
+                    </div>
+                    <div class="booking-navigation">
+                        <button id="prev-step" class="button button-secondary">Previous</button>
+                        <button id="next-step" class="button">Next</button>
+                        <button id="confirm-booking" class="button">Confirm Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MIRAI STUDIO</h3>
+                    <p>Elevating hair artistry in Oslo's Nedre Løkka/Sofienberg district.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Markveien 33<br>0554 Oslo, Norway</p>
+                    <p>+47 22 33 44 55<br>hello@miraistudio.no</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 10:00 - 19:00<br>
+                    Saturday: 10:00 - 17:00<br>
+                    Sunday: Closed</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Pinterest">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MIRAI STUDIO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

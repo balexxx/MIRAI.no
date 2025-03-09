@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | MIRAI STUDIO</title>
+    <meta name="description" content="Explore our gallery of hair transformations and salon space at MIRAI STUDIO in Oslo's Nedre Løkka/Sofienberg district.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Content/Logo_Mirai.jpg" alt="MIRAI STUDIO" class="logo-image">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="button">Book Now</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Gallery</h1>
+            <p class="fade-in delay-1">Explore our work and creative vision</p>
+        </div>
+    </section>
+
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cuts">Haircuts</button>
+                <button class="filter-btn" data-filter="color">Color</button>
+                <button class="filter-btn" data-filter="salon">Salon</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-container reveal">
+                <div class="gallery-item" data-category="color">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-1.jpg" alt="Blonde balayage transformation">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Blonde Balayage</h3>
+                                <p>Stylist: Sofia Berg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cuts">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-2.jpg" alt="Precision bob cut">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Precision Bob</h3>
+                                <p>Stylist: Akira Tanaka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-3.jpg" alt="Copper highlights">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Copper Highlights</h3>
+                                <p>Stylist: Sofia Berg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cuts">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-4.jpg" alt="Textured pixie cut">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Textured Pixie</h3>
+                                <p>Stylist: Marcus Holm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-5.jpg" alt="MIRAI STUDIO reception area">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Reception Area</h3>
+                                <p>MIRAI STUDIO Interior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-6.jpg" alt="Platinum blonde transformation">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Platinum Blonde</h3>
+                                <p>Stylist: Erika Nylund</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-7.jpg" alt="Styling stations">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Styling Stations</h3>
+                                <p>MIRAI STUDIO Interior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cuts">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-8.jpg" alt="Men's modern cut">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Modern Men's Cut</h3>
+                                <p>Stylist: Akira Tanaka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-9.jpg" alt="Pastel pink color">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Pastel Pink</h3>
+                                <p>Stylist: Sofia Berg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-10.jpg" alt="Consultation area">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Consultation Area</h3>
+                                <p>MIRAI STUDIO Interior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cuts">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-11.jpg" alt="Long layers haircut">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Long Layers</h3>
+                                <p>Stylist: Erika Nylund</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery-12.jpg" alt="Caramel highlights">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Caramel Highlights</h3>
+                                <p>Stylist: Marcus Holm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="gallery-lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="Gallery image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-text"></p>
+            </div>
+            <button class="lightbox-nav lightbox-prev">&lt;</button>
+            <button class="lightbox-nav lightbox-next">&gt;</button>
+        </div>
+    </div>
+
+    <section class="instagram-feed">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Follow Our Journey</h2>
+                <p>@miraistudio.no</p>
+            </div>
+            <div class="instagram-container reveal">
+                <a href="https://www.instagram.com/miraistudio.no" class="instagram-item" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/instagram-1.jpg" alt="Instagram post">
+                </a>
+                <a href="https://www.instagram.com/miraistudio.no" class="instagram-item" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/instagram-2.jpg" alt="Instagram post">
+                </a>
+                <a href="https://www.instagram.com/miraistudio.no" class="instagram-item" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/instagram-3.jpg" alt="Instagram post">
+                </a>
+                <a href="https://www.instagram.com/miraistudio.no" class="instagram-item" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/instagram-4.jpg" alt="Instagram post">
+                </a>
+            </div>
+            <div class="center-button reveal">
+                <a href="https://www.instagram.com/miraistudio.no" class="button" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MIRAI STUDIO</h3>
+                    <p>Elevating hair artistry in Oslo's Nedre Løkka/Sofienberg district.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Markveien 33<br>0554 Oslo, Norway</p>
+                    <p>+47 22 33 44 55<br>hello@miraistudio.no</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 10:00 - 19:00<br>
+                    Saturday: 10:00 - 17:00<br>
+                    Sunday: Closed</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Pinterest">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MIRAI STUDIO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
